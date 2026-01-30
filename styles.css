@@ -41,12 +41,25 @@ body {
 }
 
 .hero .subhead {
-  margin: 0;
+  margin: 0 0 0.5rem;
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.hero-tagline {
+  margin: 0;
+  font-size: 1rem;
   color: var(--text-muted);
+}
+
+hr {
+  margin: calc(var(--space) * 2) 0;
+  border: 0;
+  border-top: 1px solid var(--border);
 }
 
 main {
@@ -84,13 +97,66 @@ section li {
   margin-bottom: 0.5rem;
 }
 
-.problem p {
+.copy-block p {
   margin-bottom: 0.75rem;
 }
 
-.what-you-do ul,
-.what-you-have ul {
-  margin-bottom: var(--space);
+.copy-block p:last-child,
+.copy-block ul:last-child {
+  margin-bottom: 0;
+}
+
+.day-outline h3 {
+  margin-top: var(--space);
+  margin-bottom: 0.25rem;
+}
+
+.day-outline h3:first-child {
+  margin-top: 0;
+}
+
+.copy-block.closing,
+.copy-block.signature {
+  text-align: center;
+}
+
+.copy-block.signature {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* FAQ */
+.faq dl {
+  margin: 0;
+}
+
+.faq dt {
+  margin: var(--space) 0 0.25rem;
+  font-weight: 600;
+}
+
+.faq dt:first-child {
+  margin-top: 0;
+}
+
+.faq dd {
+  margin: 0 0 var(--space);
+  padding-left: 0;
+}
+
+.signup-footer .cta-repeat {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.signup-footer .cta-repeat a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-footer .cta-repeat a:hover {
+  text-decoration: underline;
 }
 
 .fit {
